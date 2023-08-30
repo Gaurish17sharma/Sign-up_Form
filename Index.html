@@ -5,18 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign-up Form</title>
     <link rel="stylesheet" href="Style.css" />
+    <script src="Script.js" defer></script>
 </head>
 <body>
     <div class="split">
 
         <div class="odin">
-            <img src="halie-west-25xggax4bSA-unsplash.jpg" class="image" width="610" height="800/>
-            <h1 class="name">Odin</h1>
+            <div class="title">
+                <h1 class="name">Odin</h1>
+                <img src="odin-lined.png" class="imgs_2"/>
+            </div>
+            <div class="image">
+                <p class="imgs">
+                    Photo by <a href="https://unsplash.com/@haliewestphoto" target="_blank">Halie West</a>
+                    on <a href="https://unsplash.com/" target="_blank">Unsplash</a>
+                </p>
+            </div>
         </div>
 
         <div class="sign_up">
             <div class="text">
-                <p>This is not a real online service! You know you need something like this in your <br>
+                <p>This is not a real online service! You know you need something like this in your
                     life to help you realize your deepest dreams. Sign up <em>now</em> to get started.</p>
                 <p> You know you want to!!</p>
             </div>
@@ -28,35 +37,35 @@
                         <div class="first_grp">
                             <div class="grp">
                                 <label for="first-name">First name</label>
+                                <input type="text" id="first-name" name="first-name" autocomplete="given-name" required>
                             </div>
-                            <input type="text" id="first-name" name="first-name" autocomplete="given-name" required>
                         
                             <div class="grp">
                                  <label for="username">EMAIL</label>
+                                 <input type="text" id="username" name="username" autocomplete="given-name" required>
                             </div>
-                            <input type="text" id="username" name="username" autocomplete="given-name" required>
                         
                             <div class="grp">
                                 <label for="passcode">PASSWORD</label>
-                            </div>
-                           <input type="text" id="passcode" name="passcode" autocomplete="given-name" required>   
+                                <input type="text" id="passcode" name="passcode" autocomplete="given-name" required>  
+                            </div> 
                         </div>
 
                         <div class="second_grp">
                             <div class="grp">
                                 <label for="last-name">last name</label>
+                                <input type="text" id="last-name" name="last-name" autocomplete="given-name" required>
                             </div>
-                            <input type="text" id="last" name="last" autocomplete="given-name" required>
                         
                             <div class="grp">
                                 <label for="number">PHONE NUMBER</label>
+                                <input type="text" id="number" name="number" autocomplete="given-name" required>
                             </div>
-                            <input type="text" id="number" name="number" autocomplete="given-name" required>
                         
                             <div class="grp">
                                 <label for="confrim-passcode">CONFIRM PASSWORD</label>
-                            </div>
-                            <input type="text" id="confrim-passcode" name="confrim-passcode" autocomplete="given-name" required>   
+                                <input type="text" id="confrim-passcode" name="confrim-passcode" autocomplete="given-name" required>
+                            </div>   
                         </div>
                     </div>
 

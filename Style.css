@@ -1,31 +1,10 @@
-* {
-    margin: 0;
-    padding: 0;
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
-:root {
-    --primary: hsl(92, 20%, 35%);
-    --error: #c44040;
-  }
-  
-  *,
-  *::before,
-  *::after {
-    box-sizing: border-box;
-  }
-  
-  html {
-    box-sizing: inherit;
-    font-family: Inter, sans-serif;
-    color: #000;
-  }
-  
-  html,
-  body {
-    width: 100%;
-    height: 100%;
-  }
-  
   a {
     text-decoration:underline;
     color: var(--primary);
@@ -36,30 +15,105 @@
     line-height: 1.2;
   }
   
-  button {
-    border: none;
-    cursor: pointer;
-  }
-
 .split{
     display: flex;
-    flex-direction: row;
-    
+    flex-direction: row;  
+}
+
+.odin {
+  background-image: url("img/halie-west-25xggax4bSA-unsplash.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+  color: #fff;
+  position: relative;
+  width:60%;
+}
+
+.odin .title{
+  background-color: hsl(0, 0%, 0%, 0.45);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+  margin-top: clamp(50px, 20vh, 160px)
+}
+
+.imgs_2 {
+  width: 20%;
+}
+
+.odin .title .name{
+  font-family: "Norse", fantasy;
+  font-weight: bold;
+  font-size: 4.5rem;
+}
+
+.odin .image .imgs{
+  position: absolute;
+  bottom: 12px;
+  width: 100%;
+  text-align: center;
+  font-size: 0.75rem;
+  color: hsl(0, 0%, 100%, 0.8);
+  padding: 0 0.5rem;
+  margin: 0;
+}
+
+.odin .image .imgs > a {
+  color: inherit;
+  text-decoration: underline;
 }
 
 .sign_up .text{
-    padding: 100px 140px 60px 60px;
-    font-size: 20px;
-    font-weight: 600;
-    background-color: #E5E7EB;
-}
-
-p{
-    margin-bottom: 20px;
+  padding: 120px 220px 30px 50px;
+  font-size: 20px;
+  font-weight: 600;
+  background-color: #E5E7EB;
 }
 
 .grps{
     display: flex;
     flex-direction: row;
-    padding: auto;
+    padding: 10px;
+    text-align: start;
+}
+
+input {
+  width: 250px;
+}
+
+
+.grp {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  margin-left: 40px;
+  margin-right: 40px ;
+}
+
+.sign_form h1 {
+  margin-left: 35px;
+  padding: 15px;
+}
+
+.action {
+  background-color:#E5E7EB ;
+  padding: 20px 50px 145px 50px
+}
+
+
+.action .submit-button{
+  border-radius: 5px;
+  color: white;
+  background-color: #596D48;
+  width: 190px;
+  height: 40px;
+  margin-bottom: 30px;
+  font-size: 15px;
+  
+}
+
+.action >p >a {
+  color:#596D48;
 }
